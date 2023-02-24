@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html[data-theme='dark'] {
+  --mac-image: url("https://4kwallpapers.com/images/wallpapers/macbook-pro-apple-event-2020-dark-background-3072x1906-3278.jpg");
+  --imac: url("https://www.macobserver.com/wp-content/uploads/2021/01/Pro-Display-XDR-black-background.jpg");
+  --iphone: url("https://www.apple.com/v/iphone-14-pro/c/images/overview/camera/three-camera-system/camera_lenses_endframe__imlp0a6dtgae_large.jpg");
+  --tv: url("https://www.scare.me/images/misc/home-tv.jpg");
+  --linear-gradient: 180deg, rgba(0, 0, 0, 0.76) 0%, rgba(0,0,0,0.4360337885154062) 50%, rgba(0, 0, 0, 0.84) 100%;
+  --width: 200px;
+  --height: 150px;
+  --top: 30px;
+  --right: 100px;
+  --left: 100px;
+
+  --header-linear: 180deg, rgba(0,0,0,1) 21%, rgba(245,245,245,0) 100%;
+
+  --movielist-linear: 180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9094231442577031) 50%, rgba(0,0,0,1) 100%, url("https://thurrott.s3.amazonaws.com/wp-content/uploads/sites/2/2022/01/14172326/netflix.jpg");
+
+  --movies-background: rgba(86, 86, 86, 0.34);
+
+  --video-opacity: 50%;
+
+  --user-linear: 90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1);
+
+  --border: 11px solid #111111;
+  --button-text-color: #ffffff;
+  --button-background-color: #464646;
+  --button-border-color: #ffffff;
+  --background-color: #000000;
+  --icon-color: #363636;
+}
+
+html[data-theme='light'] {
+  --mac-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2021-14in.png");
+  --imac: url("https://assets.stickpng.com/images/585ac1004f6ae202fedf293f.png");
+  --iphone: url("https://www.pngall.com/wp-content/uploads/5/Apple-iPhone-12-PNG.png");
+  --tv: url("https://www.pngall.com/wp-content/uploads/5/Full-HD-LED-TV-PNG-Image.png");
+  --border: 11px solid #d7d7d7;
+  --linear-gradient: 180deg, rgba(255,255,255,0.4500393907563025) 0%, rgba(0,0,0,0.4360337885154062) 50%, rgba(255,255,255,0.5200674019607843) 100%;
+  --width: 100px;
+  --height: 200px;
+  --top: 1px;
+  --right: 150px;
+  --left: 150px;
+
+  --header-linear: 180deg, rgba(255, 255, 255, 0.42) 21%, rgba(245,245,245,0) 100%;
+
+  --movielist-linear: 180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.91) 50%, rgb(255, 255, 255) 100%, url("https://thurrott.s3.amazonaws.com/wp-content/uploads/sites/2/2022/01/14172326/netflix.jpg");
+
+  --movies-background: rgba(0, 0, 0, 0.34);
+
+  --video-opacity: 20%;
+
+  --user-linear: 90deg, rgba(206,206,206,1) 0%, rgba(0,0,0,1);
+
+  --button-text-color: #000000;
+  --button-background-color: #000000;
+  --button-border-color: #000000;
+
+  --background-color: #cecece;
+  --icon-color: #4e005c;
+}

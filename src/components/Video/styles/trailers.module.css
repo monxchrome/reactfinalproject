@@ -1,0 +1,8 @@
+.TrailersDiv{
+    display: flex;
+    z-index: 100;
+}
+
+.Trailer{
+    margin-right: 50px;
+}

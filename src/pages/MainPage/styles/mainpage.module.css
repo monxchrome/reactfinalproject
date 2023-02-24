@@ -1,0 +1,201 @@
+.Father{
+
+}
+
+.BG{
+    background-image: linear-gradient(var(--linear-gradient)), url("https://assets.nflxext.com/ffe/siteui/vlv3/83e8c151-107d-4e8f-b95a-d2ba99d49bb9/84ea8a0d-3186-4360-a20c-2655b6c87c10/ME-en-20230213-popsignuptwoweeks-perspective_alpha_website_small.jpg ");
+    transition: --linear-gradient 200ms linear;
+    width: 100%;
+    height: 800px;
+    margin-top: -170px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.BannerTextDiv{
+    margin: 0;
+    position: relative;
+    top: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.BannerText{
+    color: white;
+    font-size: xxx-large;
+}
+
+.TVDiv{
+    width: 100%;
+    height: 400px;
+    background-color: var(--background-color);
+    transition: background-color 200ms linear;
+    margin-top: -60px;
+    outline: var(--border);
+    outline-offset: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.TextDiv{
+    position: relative;
+    right: 30%;
+    top: 30%;
+}
+
+.DescDiv{
+    position: relative;
+    left: 50px;
+    top: 20%;
+    width: 500px;
+}
+
+.TVDesc{
+    color: var(--button-text-color);
+    transition: color 300ms linear;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.TVText{
+    color: var(--button-text-color);
+    transition: color 300ms linear;
+    font-size: 50px;
+}
+
+.TVImgDiv{
+    position: relative;
+    left: 60%;
+    bottom: 40%;
+    width: 100px;
+}
+
+.TVImg{
+    width: 500px;
+    height: 200px;
+    background-image: var(--tv);
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.ImgFather{
+    position: relative;
+    display: flex;
+    bottom: 150px;
+}
+
+.MacbookImg{
+    position: relative;
+    right: 150px;
+    width: 500px;
+    height: 200px;
+    background-image: var(--mac-image);
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.iMacImg{
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    left: var(--left);
+    top: var(--top);
+    background-image: var(--imac);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.iPhoneImg{
+    position: relative;
+    width: 400px;
+    height: 97px;
+    top: 170px;
+    right: var(--right);
+    background-image: var(--iphone);
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.OktenImg{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    top: 100px;
+    right: 100px;
+    background-image: url("https://owu.com.ua/image/logo/webp/Blue-Big-Bird-Final-Logo.webp");
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+
+.NetflixImg{
+    border-radius: 100px;
+    border: 3px solid black;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 90px;
+    background-image: url("https://i.pinimg.com/originals/bb/23/46/bb2346582caedef6034cb425150edcbc.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.ReduxImg{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 105px;
+    left: 100px;
+    background-image: url("https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.BannerDesc{
+    position: relative;
+    color: white;
+    bottom: 30px;
+    font-size: 30px;
+    font-weight: initial;
+}
+
+.Form{
+    position: relative;
+    top: 10px;
+}
+
+form {
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 30%;
+}
+form input[type=search] {
+    border: solid 3px #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 1em;
+    height: 2em;
+    margin-left: -15vw;
+    outline: solid rgba(0, 0, 0, 0.38) 0;
+    padding: 0.5em;
+    transition: all 2s ease-in;
+    width: 30vw;
+    z-index: 1;
+}
+form input[type=search]:focus {
+    border: solid 3px #09f;
+    outline: solid rgba(0, 0, 0, 0.42) 2000px;
+}
+
+.over{
+    position: relative;
+    left: 530px;
+    top: 100px;
+    width:450px;
+    height:100px;
+    background: rgba(255, 255, 255, 0.34);
+    border-radius: 10px;
+    overflow: auto;
+}

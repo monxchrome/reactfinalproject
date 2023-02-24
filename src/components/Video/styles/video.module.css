@@ -1,0 +1,9 @@
+.PlayPause{
+    z-index: 99;
+}
+
+.FaSolid{
+    color: var(--button-text-color);
+    transition: color 300ms linear;
+    background: white;
+}

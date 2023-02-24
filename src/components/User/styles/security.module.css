@@ -1,0 +1,286 @@
+.main{
+    position: relative;
+    bottom: 100px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background-color: var(--background-color);
+    transition: background-color 200ms linear;
+    font-size: 0.65em;
+}
+
+.nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+.nav ul {
+    list-style: none;
+}
+.nav ul li {
+    position: relative;
+    margin: 3.2em 0;
+}
+.nav ul li a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: var(--button-text-color);
+    display: block;
+    transition: all ease-out 300ms;
+}
+.nav ul li.active a {
+    color: white;
+}
+.nav ul li:not(.active)::after {
+    opacity: 0.2;
+}
+.nav ul li:not(.active):hover a {
+    color: var(--button-text-color);
+    transition: color 300ms, linear;
+}
+.nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(var(--user-linear));
+    transition: 200ms linear;
+}
+
+.Wrap{
+    display: flex;
+    position: absolute;
+    left: 850px;
+    top: 400px;
+}
+
+.Wraps{
+    position: relative;
+    display: flex;
+    right: 500px;
+    bottom: 250px;
+}
+
+.Wraps2{
+    position: relative;
+    display: flex;
+    right: 500px;
+    bottom: 250px;
+}
+
+.twitter {
+    position: relative;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+}
+.twitter .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.twitter a {
+    position: relative;
+}
+.twitter a img {
+    width: 48px;
+    height: 48px;
+}
+.twitter p {
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.UsernameDiv{
+    position: relative;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.Username {
+    letter-spacing: 5px;
+    font-size: x-large;
+    color: var(--button-text-color);
+}
+
+.balloon {
+    display: inline-block;
+    width: 215px;
+    padding: 10px 0 10px 15px;
+    font-family: "Open Sans", sans;
+    font-weight: 400;
+    color: #377d6a;
+    background: #efefef;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    text-indent: 60px;
+    transition: all 0.3s ease-in-out;
+}
+.balloon::-webkit-input-placeholder {
+    color: #efefef;
+    text-indent: 0;
+    font-weight: 300;
+}
+.balloon + label {
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    width: 100px;
+    top: 9px;
+    left: 0;
+    bottom: 8px;
+    padding: 5px 15px;
+    color: #032429;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0);
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+    background: rgba(122, 184, 147, 0);
+}
+.balloon + label:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 50%;
+    margin-left: -3px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid rgba(122, 184, 147, 0);
+    transition: all 0.3s ease-in-out;
+}
+.balloon:focus, .balloon:active {
+    color: #377d6a;
+    text-indent: 0;
+    background: #fff;
+}
+.balloon:focus::-webkit-input-placeholder, .balloon:active::-webkit-input-placeholder {
+    color: #aaa;
+}
+.balloon:focus + label, .balloon:active + label {
+    color: #000000;
+    text-shadow: 0 1px 0 rgba(100, 100, 100, 0.4);
+    background: rgb(255, 255, 255);
+    transform: translateY(-40px);
+}
+.balloon:focus + label:after, .balloon:active + label:after {
+    border-top: 4px solid rgb(255, 255, 255);
+}
+
+
+
+.balloonEr {
+    display: inline-block;
+    width: 215px;
+    padding: 10px 0 10px 15px;
+    font-family: "Open Sans", sans;
+    font-weight: 400;
+    color: #377d6a;
+    background: #efefef;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    text-indent: 60px;
+    transition: all 0.3s ease-in-out;
+}
+.balloonEr::-webkit-input-placeholder {
+    color: #efefef;
+    text-indent: 0;
+    font-weight: 300;
+}
+.balloonEr + label {
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    width: 100px;
+    top: 9px;
+    left: 0;
+    bottom: 8px;
+    padding: 5px 15px;
+    color: #032429;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0);
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+    background: rgba(122, 184, 147, 0);
+}
+.balloonEr + label:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 50%;
+    margin-left: -3px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid rgba(122, 184, 147, 0);
+    transition: all 0.3s ease-in-out;
+}
+.balloonEr:focus, .balloon:active {
+    color: #377d6a;
+    text-indent: 0;
+    background: #ffadad;
+}
+.balloonEr:focus::-webkit-input-placeholder, .balloon:active::-webkit-input-placeholder {
+    color: #ffffff;
+}
+.balloonEr:focus + label, .balloon:active + label {
+    color: #2f0000;
+    text-shadow: 0 1px 0 rgba(117, 41, 41, 0.4);
+    background: rgb(255, 135, 135);
+    transform: translateY(-40px);
+}
+.balloonEr:focus + label:after, .balloon:active + label:after {
+    border-top: 4px solid rgb(255, 255, 255);
+}
+
+.outline{
+    margin-left: 70px;
+    margin-top: 50px;
+    color: black;
+    width: 780px;
+}
+
+.InputUsername{
+    position: relative;
+    margin-top: 40px;
+    width: 700px;
+}
+
+.InputPassword{
+    position: relative;
+    margin-top: 40px;
+    width: 100px;
+}
+
+.PasswordMain{
+    position: relative;
+
+}
+
+.UserNameMain{
+
+}

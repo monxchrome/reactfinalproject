@@ -1,0 +1,56 @@
+html{
+    background-color: var(--background-color);
+    transition: background-color 200ms linear;
+}
+
+.Body{
+    position: relative;
+    background-image: linear-gradient(var(--movielist-linear));
+}
+
+.Box{
+    outline: 11px solid #111111;
+    outline-offset: 0;
+    height: 700px;
+}
+
+.Box2{
+    position: relative;
+    bottom: 20px;
+    border-bottom: 11px solid #111111;
+    height: 420px;
+}
+
+.TextDiv{
+    position: absolute;
+    top: 50px;
+    margin-left: 650px;
+}
+
+.Text{
+    color: var(--button-text-color);
+    transition: color 300ms linear;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.Father{
+    display: flex;
+}
+
+
+
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+}
+
+.each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+.Form{
+    position: relative;
+    top: 10px;
+}
+
+form {
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 30%;
+}
+form input[type=search] {
+    border: solid 3px #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 1em;
+    height: 2em;
+    margin-left: -15vw;
+    outline: solid rgba(0, 0, 0, 0.38) 0;
+    padding: 0.5em;
+    transition: all 2s ease-in;
+    width: 30vw;
+    z-index: 1;
+}
+form input[type=search]:focus {
+    border: solid 3px #09f;
+    outline: solid rgba(0, 0, 0, 0.42) 2000px;
+}
+
+.over{
+    position: relative;
+    left: 530px;
+    top: 62px;
+    width:450px;
+    height:100px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.Img{
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+    width: 50px;
+    height: 80px;
+}
+
+.Wrap{
+    display: flex;
+}
+
+.TitleDiv{
+    width: 380px;
+    position: relative;
+    bottom: 20px;
+}
+
+.Title{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: small;
+}
+
+.Mother{
+    margin-top: 20px;
+}
+
+.DescDiv{
+    text-align: center;
+    width: 300px;
+    position: relative;
+    left: 30px;
+    bottom: 30px;
+}
+
+.Desc{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: initial;
+    font-size: x-small;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.Father{
+    position: relative;
+    width: 450px;
+    height: 100px;
+}

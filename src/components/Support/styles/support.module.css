@@ -1,0 +1,304 @@
+.main{
+    position: relative;
+    bottom: 100px;
+}
+
+.twitter {
+    position: relative;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+}
+.twitter .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.twitter a {
+    position: relative;
+}
+.twitter a img {
+    width: 48px;
+    height: 48px;
+}
+.twitter p {
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background-color: var(--background-color);
+    transition: background-color 200ms linear;
+    font-size: 0.65em;
+}
+
+.nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    position: relative;
+    margin: 3.2em 0;
+}
+
+.nav ul li a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: var(--button-text-color);
+    display: block;
+    transition: all ease-out 300ms;
+}
+
+.nav ul li.active a {
+    color: white;
+}
+
+.nav ul li:not(.active)::after {
+    opacity: 0.2;
+}
+
+.nav ul li:not(.active):hover a {
+    color: var(--button-text-color);
+    transition: color 300ms, linear;
+}
+
+.nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(var(--user-linear));
+    transition: 200ms linear;
+}
+
+.Wrap{
+    position: relative;
+    left: 650px;
+    top: 50px;
+}
+
+.Title{
+    font-size: x-large;
+    letter-spacing: 5px;
+    color: var(--button-text-color);
+}
+
+.DescDiv{
+    position: relative;
+    right: 150px;
+}
+
+.Desc{
+    letter-spacing: 2px;
+    width: 500px;
+    color: var(--button-text-color);
+}
+
+.basicSlide {
+    display: inline-block;
+    width: 215px;
+    height: 20px;
+    padding: 10px 0 10px 15px;
+    font-family: "Open Sans", sans;
+    font-weight: 400;
+    color: #000000;
+    background: #efefef;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    text-indent: 70px;
+    transition: all 0.3s ease-in-out;
+}
+.basicSlide::-webkit-input-placeholder {
+    color: #efefef;
+    text-indent: 0;
+    font-weight: 300;
+}
+.basicSlide + label {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    height: 20px;
+    padding: 10px 15px;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, .4);
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.basicSlide:focus, .basic-slide:active {
+    color: #000000;
+    text-indent: 0;
+    background: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.basicSlide:focus::-webkit-input-placeholder, .basic-slide:active::-webkit-input-placeholder {
+    color: #aaa;
+}
+.basicSlide:focus + label, .basic-slide:active + label {
+    transform: translateX(-100%);
+}
+
+.basicSlide2 {
+    display: inline-block;
+    height: 20px;
+    width: 215px;
+    padding: 10px 0 10px 15px;
+    font-family: "Open Sans", sans;
+    font-weight: 400;
+    color: #000000;
+    background: #efefef;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    text-indent: 70px;
+    transition: all 0.3s ease-in-out;
+}
+.basicSlide2::-webkit-input-placeholder {
+    color: #efefef;
+    text-indent: 0;
+    font-weight: 300;
+}
+.basicSlide2 + label {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 330px;
+    height: 20px;
+    padding: 10px 15px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    height: 20px;
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.basicSlide2:focus, .basic-slide:active {
+    color: #000000;
+    text-indent: 0;
+    background: #ffffff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.basicSlide2:focus::-webkit-input-placeholder, .basic-slide:active::-webkit-input-placeholder {
+    color: #aaa;
+}
+.basicSlide2:focus + label, .basic-slide:active + label {
+    transform: translateX(-100%);
+}
+
+.Wraper{
+    position: relative;
+    display: flex;
+    right: 200px;
+}
+
+.Wrapp{
+    margin-left: 100px;
+}
+
+.Wrapp2{
+    position: relative;
+    right: 180px;
+    top: 50px;
+}
+
+.swing {
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+    padding: 10px 0 10px 15px;
+    font-family: "Open Sans", sans;
+    font-weight: 400;
+    color: #000000;
+    background: #efefef;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    text-indent: 60px;
+    transition: all 0.3s ease-in-out;
+}
+.swing::-webkit-input-placeholder {
+    color: #efefef;
+    text-indent: 0;
+    font-weight: 300;
+}
+.swing + label {
+    display: inline-block;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    padding: 10px 15px;
+    text-shadow: 0 1px 0 rgba(101, 101, 101, 0.4);
+    background: #ffffff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transform-origin: 2px 2px;
+    transform: rotate(0);
+    animation: swing-back 0.4s 1 ease-in-out;
+}
+@keyframes swing {
+    0% {
+        transform: rotate(0);
+    }
+    20% {
+        transform: rotate(116deg);
+    }
+    40% {
+        transform: rotate(60deg);
+    }
+    60% {
+        transform: rotate(98deg);
+    }
+    80% {
+        transform: rotate(76deg);
+    }
+    100% {
+        transform: rotate(82deg);
+    }
+}
+@keyframes swing-back {
+    0% {
+        transform: rotate(82deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+.swing:focus, .swing:active {
+    color: #000000;
+    text-indent: 0;
+    background: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.swing:focus::-webkit-input-placeholder, .swing:active::-webkit-input-placeholder {
+    color: #aaa;
+}
+.swing:focus + label, .swing:active + label {
+    animation: swing 1.4s 1 ease-in-out;
+    transform: rotate(82deg);
+}
