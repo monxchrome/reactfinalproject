@@ -1,19 +1,20 @@
 import React, {useEffect, useState} from 'react';
-import css from './styles/detail.module.css'
-import {posterURL} from "../../configs";
 import StarIcon from "@mui/icons-material/Star";
 import {styled} from "@mui/material/styles";
 import Rating from "@mui/material/Rating";
-import {GenresDetails} from "../Genres/GenresDetails";
-import {filmService} from "../../services/filmService";
-import {Video} from "../Video/Video";
 import {Button} from "@mui/material";
+
+import css from './styles/detail.module.css'
+import {posterURL} from "../../configs";
+import {GenresDetails} from "../Genres/GenresDetails";
+import {filmService} from "../../services";
+import {Video} from "../Video/Video";
 import {Trailers} from "../Video/Trailers";
 
 const MovieDetails = ({film}) => {
     const [video, setVideo] = useState([])
     const [playing, setPlaying] = useState(true)
-    const {poster_path, original_title, vote_average, overview, genres, backdrop_path, id} = film
+    const {poster_path, original_title, vote_average, overview, genres, id} = film
     const StyledRating = styled(Rating)({
         '& .MuiRating-iconFilled': {
             color: '#ffffff',
@@ -30,11 +31,7 @@ const MovieDetails = ({film}) => {
 
         return (
             <div>
-                <div className={css.Mother} style={{
-                    // backgroundImage: `linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7553615196078431) 50%, rgba(0,0,0,1) 100%), url(${posterURL+backdrop_path})`,
-                    // backgroundRepeat: "no-repeat",
-                    // backgroundSize: 'cover'
-                }}>
+                <div className={css.Mother}>
                         <div className={css.VideoDiv}>
                             {video.map(item => <Video key={item.id} video={item} playing={playing}/>)}
                         </div>
@@ -79,7 +76,7 @@ const MovieDetails = ({film}) => {
                             <p className={css.Desc}>{overview}</p>
                             <div className={css.TrailersDiv}>
                                 <div>
-                                    {video.map(item => <Trailers key={item.id} video={item}/>)}
+                                    {video.map(item => <Trailers key={item.id} video={item} film={film}/>)}
                                 </div>
                             </div>
                         </div>

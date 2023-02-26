@@ -2,7 +2,8 @@ import React from 'react';
 import css from './styles/header.module.css'
 import {NavLink} from "react-router-dom";
 import {Button} from "@mui/material";
-import {useTheme} from '../../hooks/use-theme'
+
+import {useTheme} from '../../hooks'
 
 const Header = () => {
     const {theme, setTheme} = useTheme()

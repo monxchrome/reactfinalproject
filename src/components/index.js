@@ -1,2 +1,41 @@
-export * from './Header/Header'
+export * from './Movies/Movie'
+export * from './Movies/Movies'
+export * from './Movies/MovieDetails'
 export * from './Movies/MoviesAction'
+export * from './Movies/MoviesDetail'
+
+export * from './User/User'
+export * from './User/Security'
+
+export * from './Search/Search'
+export * from './Search/SearchMovie'
+
+export * from './Video/Video'
+export * from './Video/Trailers'
+
+export * from './Support/Support'
+
+export * from './Header/Header'
+
+export * from './Loading/Loading'
+
+export * from './Genres/Adventures'
+export * from './Genres/Animations'
+export * from './Genres/Comedies'
+export * from './Genres/Crimes'
+export * from './Genres/Documentaries'
+export * from './Genres/Dramas'
+export * from './Genres/Families'
+export * from './Genres/Fantasies'
+export * from './Genres/GenresList'
+export * from './Genres/GenresDetails'
+export * from './Genres/Histories'
+export * from './Genres/Horrors'
+export * from './Genres/Musics'
+export * from './Genres/Mysteries'
+export * from './Genres/Romances'
+export * from './Genres/ScienceFiction'
+export * from './Genres/Thrillers'
+export * from './Genres/TvMovies'
+export * from './Genres/Wars'
+export * from './Genres/Westerns'

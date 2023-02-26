@@ -1,13 +1,16 @@
 import React from 'react';
-import css from './styles/film.module.css'
-import {posterURL} from "../../configs";
 import { styled } from '@mui/material/styles';
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/icons-material/Star';
 import {NavLink} from "react-router-dom";
 
+import {posterURL} from "../../configs";
+import css from './styles/film.module.css'
+import {useSelector} from "react-redux";
+
 const Movie = ({films}) => {
     const {poster_path, vote_average, original_title, overview, id} = films
+    const {loading} = useSelector(state => state.films)
 
     const StyledRating = styled(Rating)({
         '& .MuiRating-iconFilled': {
@@ -19,7 +22,6 @@ const Movie = ({films}) => {
     });
         return (
             <div className={css.Father}>
-
                 <div className={`${css.Mother} ${css.pulseBox}`}>
 
                     <div className={css.ImgDiv}>

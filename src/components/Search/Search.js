@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+
 import css from './styles/search.module.css'
-import {filmService} from "../../services/filmService";
+import {filmService} from "../../services";
 import {SearchMovie} from "./SearchMovie";
 
 const SearchMovies = () => {
@@ -11,7 +12,6 @@ const SearchMovies = () => {
         e.preventDefault();
 
         try {
-            // const response = await axios.get(url);
             const response = await filmService.searchMovies(query)
             setMovies(response.data.results);
         } catch (error) {
@@ -31,7 +31,6 @@ const SearchMovies = () => {
             </form>
             <div className={css.over}>
                 {movies.map((movie) => (
-                        // <div key={movie.id} item={movie}>{movie.title}</div>
                     <SearchMovie key={movie.id} movie={movie}/>
                 ))}
             </div>

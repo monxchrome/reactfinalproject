@@ -1,5 +1,6 @@
 import React from 'react';
-import {Security} from "../../components/User/Security";
+
+import {Security} from "../../components";
 
 const SecurityPage = () => {
         return (

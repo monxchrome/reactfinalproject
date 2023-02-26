@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {MovieDetails} from "./MovieDetails";
-import {filmService} from "../../services/filmService";
 
-const MoviesDetails = ({movieID}) => {
+import {MovieDetails} from "./MovieDetails";
+import {filmService} from "../../services";
+
+const MoviesDetail = ({movieID}) => {
     const [film, setFilm] = useState([])
 
     useEffect(() => {
@@ -16,4 +17,4 @@ const MoviesDetails = ({movieID}) => {
         );
 };
 
-export {MoviesDetails};
+export {MoviesDetail};

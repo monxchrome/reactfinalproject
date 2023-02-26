@@ -1,6 +1,7 @@
 import React from 'react';
-import css from "./styles/security.module.css";
 import {NavLink} from "react-router-dom";
+
+import css from "./styles/security.module.css";
 
 const Security = () => {
         return (

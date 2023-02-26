@@ -124,12 +124,13 @@ a {
 
 .ButtonsDiv{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: relative;
 
 }
 
 .bubblyButton {
+    width: 200px;
     font-family: "Helvetica", "Arial", sans-serif;
     display: inline-block;
     font-size: 1em;
@@ -202,7 +203,7 @@ a {
 .navMenu {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 715px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
@@ -210,11 +211,23 @@ a {
 .Wraps{
     position: relative;
     bottom: 30px;
-    right: 70px;
+
+}
+
+.Wr{
+    position: relative;
+    width: 700px;
+    left: 60%;
+}
+
+.films{
+    position: relative;
+    top: 100px;
+    left: 6%;
 }
 
 .navMenu a {
-    color: #f6f4e6;
+    color: var(--button-text-color);
     text-decoration: none;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -274,4 +287,23 @@ a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
+}
+
+.loading{
+    position: relative;
+    z-index: 5;
+    top: 400px;
+
+}
+
+.TextDiv{
+    position: absolute;
+    margin-left: 665px;
+}
+
+.Text{
+    color: var(--button-text-color);
+    transition: color 300ms linear;
+    font-size: xx-large;
+    font-weight: bold;
 }

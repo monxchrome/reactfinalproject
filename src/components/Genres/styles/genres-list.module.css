@@ -16,7 +16,7 @@
 .navMenu a {
     margin-top: 10px;
     margin-right: 50px;
-    color: #f6f4e6;
+    color: var(--button-text-color);
     text-decoration: none;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -27,13 +27,13 @@
 }
 
 .navMenu a:hover {
-    color: #fddb3a;
+    color: var(--button-text-color);
 }
 
 .navMenu .dot {
     width: 6px;
     height: 6px;
-    background: #fddb3a;
+    background: var(--button-text-color);
     border-radius: 50%;
     opacity: 0;
     -webkit-transform: translateX(30px);

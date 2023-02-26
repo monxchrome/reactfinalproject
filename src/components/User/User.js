@@ -1,6 +1,7 @@
 import React from 'react';
-import css from './styles/user.module.css'
 import {NavLink} from "react-router-dom";
+
+import css from './styles/user.module.css'
 
 const User = () => {
         return (

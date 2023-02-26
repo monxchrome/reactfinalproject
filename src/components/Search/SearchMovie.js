@@ -1,7 +1,8 @@
 import React from 'react';
-import {posterURL} from "../../configs";
-import css from './styles/search.module.css'
 import {NavLink} from "react-router-dom";
+
+import css from './styles/search.module.css'
+import {posterURL} from "../../configs";
 
 const SearchMovie = ({movie}) => {
     const {poster_path, overview, original_title, id} = movie

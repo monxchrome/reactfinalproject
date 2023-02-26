@@ -41,7 +41,7 @@ a:hover {
 
 .LogoDiv{
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 50px;
 }
 
 .Logo{
@@ -56,13 +56,12 @@ a:hover {
 }
 
 .MoviesListDiv{
-
+    position: relative;
+    top: 30px;
+    left: 950px;
 }
 
 .MoviesList{
-    position: relative;
-    top: 30px;
-    left: 700px;
     color: var(--button-text-color);
     transition: color 300ms linear;
 }

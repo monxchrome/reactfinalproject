@@ -1,20 +1,29 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavLink, useSearchParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 
 import {filmActions} from "../../redux";
-import {Movie} from "./Movie";
-import css from './styles/film.module.css'
+import {Movie} from "../Movies/Movie";
+
+import css from '../Movies/styles/film.module.css'
+import {genreService} from "../../services";
 import {Loading} from "../Loading/Loading";
 
-const Movies = () => {
-    const {films, page, loading} = useSelector(state => state.films)
+const Wars = () => {
+    const {genres, page, loading} = useSelector(state => state.genres)
     const dispatch = useDispatch();
     const [query, setQuery] = useSearchParams({page: '1'})
+    const [genre, setGenre] = useState([])
+    const genresArr = genre.genres;
+    const filterGenres = genresArr?.filter(item => item.name === 'War')
+    const takeObj = filterGenres?.[0];
+    const actionID = takeObj?.id
+
 
     useEffect(() => {
-        dispatch(filmActions.getAll({page: query.get('page')}))
-    }, [dispatch, query])
+        dispatch(filmActions.getByGenre({page: query.get('page'), id: actionID}))
+        genreService.getAll().then(({data}) => setGenre(data))
+    }, [dispatch, query, actionID])
 
     return (
         <div>
@@ -38,13 +47,16 @@ const Movies = () => {
                 </div>
             </div>
             <div className={css.loading}>
+
+            </div>
+            <div className={css.loading}>
                 {loading && <Loading/>}
             </div>
             <div className={css.films}>
-                {films.map(item => <Movie key={item.id} films={item}/>)}
+                {genres.map(item => <Movie key={item.id} films={item}/>)}
             </div>
         </div>
     );
 };
 
-export {Movies};
+export {Wars};

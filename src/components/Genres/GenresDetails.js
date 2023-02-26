@@ -1,4 +1,5 @@
 import React from 'react';
+
 import css from './styles/genre-details.module.css'
 
 const GenresDetails = ({genres}) => {

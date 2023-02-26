@@ -1,5 +1,6 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import {filmService} from "../../services/filmService";
+
+import {filmService} from "../../services";
 
 const initialState = {
     films: [],
@@ -17,6 +18,7 @@ const getAll = createAsyncThunk(
     'filmSlice/getAll',
     async ({page}, thunkAPI) => {
         try {
+            await new Promise(resolve => setTimeout(() => resolve(), 1000))
             const {data} = await filmService.getAll(page)
             return data
         } catch (e) {
@@ -29,6 +31,7 @@ const getByGenre = createAsyncThunk(
     'genreSlice/getByGenre',
     async ({page, id}, thunkAPI) => {
         try {
+            await new Promise(resolve => setTimeout(() => resolve(), 1000))
             const {data} = await filmService.getWithGenres(page, id)
             return data
         } catch (e) {
@@ -75,22 +78,30 @@ const filmSlice = createSlice({
             const {page, results} = action.payload
             state.films = results
             state.page = page
-            state.page = page
+                state.loading = false
             })
             .addCase(getByGenre.fulfilled, (state, action) => {
                 const {page, results} = action.payload
 
                 state.genres = results
                 state.page = page
-                state.page = page
+                state.loading = false
             })
             .addCase(getById.fulfilled, (state, action) => {
                 const {results} = action.payload
                 state.films = results
+                state.loading = false
             })
             .addCase(getVideo.fulfilled, (state, action) => {
                 const {results} = action.payload
                 state.video = results
+                state.loading = false
+            })
+            .addCase(getAll.pending, (state, action) => {
+                state.loading = true
+            })
+            .addCase(getByGenre.pending, (state, action) => {
+                state.loading = true
             })
 })
 

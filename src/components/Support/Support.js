@@ -1,6 +1,7 @@
 import React from 'react';
-import css from './styles/support.module.css'
 import {NavLink} from "react-router-dom";
+
+import css from './styles/support.module.css'
 
 const Support = () => {
         return (

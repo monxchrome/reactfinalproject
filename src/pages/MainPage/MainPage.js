@@ -1,7 +1,9 @@
-import css from './styles/mainpage.module.css'
 import React, {useState} from "react";
-import {filmService} from "../../services/filmService";
-import {SearchMovie} from "../../components/Search/SearchMovie";
+
+import {filmService} from "../../services";
+import {SearchMovie} from "../../components";
+
+import css from './styles/mainpage.module.css'
 
 const MainPage = () => {
     const [query, setQuery] = useState("");

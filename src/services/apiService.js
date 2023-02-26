@@ -1,6 +1,6 @@
 import axios from "axios";
+
 import {baseURL} from "../configs";
-import {createBrowserHistory} from "history";
 import {authService} from "./authService";
 
 const apiService = axios.create({baseURL});
