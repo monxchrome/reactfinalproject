@@ -27,7 +27,6 @@ a {
     border-style: solid;
     border-radius: 50px;
     position: relative;
-    left: 100px;
     width: 500px;
     display: flex;
     background: var(--movies-background);
@@ -69,12 +68,10 @@ a {
 .Father2{
     display: inline-block;
     position: relative;
-    margin-left: 50px;
+    margin-left: 30px;
     top: 50px;
     right: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .MainWrap{
@@ -227,6 +224,10 @@ a {
 
 .films{
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .navMenu a {
