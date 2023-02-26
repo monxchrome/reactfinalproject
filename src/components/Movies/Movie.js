@@ -10,7 +10,6 @@ import {useSelector} from "react-redux";
 
 const Movie = ({films}) => {
     const {poster_path, vote_average, original_title, overview, id} = films
-    const {loading} = useSelector(state => state.films)
 
     const StyledRating = styled(Rating)({
         '& .MuiRating-iconFilled': {
@@ -21,7 +20,7 @@ const Movie = ({films}) => {
         },
     });
         return (
-            <div className={css.Father}>
+            <div className={css.Father2}>
                 <div className={`${css.Mother} ${css.pulseBox}`}>
 
                     <div className={css.ImgDiv}>

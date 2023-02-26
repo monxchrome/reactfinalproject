@@ -17,24 +17,22 @@ const Movies = () => {
     }, [dispatch, query])
 
     return (
-        <div>
+        <div className={css.FatherWrap}>
             <div className={css.Father}>
-                <div>
-                    <div className={css.Wraps}>
+                <div className={css.MainWrap}>
                         <nav className={css.navMenu}>
                             <NavLink to={'/genres'}><a href="/genres">Genres</a></NavLink>
                             <div className={css.dot}></div>
                         </nav>
-                    </div>
                     <div className={css.Wr}>
                         <div className={css.ButtonsDiv}>
                             <button className={css.bubblyButton} disabled={page === 1} onClick={() => setQuery(query => ({page: +query.get('page') -1}))}>Previous Page</button>
                             <button className={css.bubblyButton} disabled={page === 500} onClick={() => setQuery(query => ({page: +query.get('page') +1}))}>Next Page</button>
                         </div>
                     </div>
-                </div>
-                <div className={css.TextDiv}>
-                    <h4 className={css.Text}>Movies</h4>
+                    <div className={css.TextDiv}>
+                        <h4 className={css.Text}>Movies</h4>
+                    </div>
                 </div>
             </div>
             <div className={css.loading}>

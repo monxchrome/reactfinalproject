@@ -6,7 +6,7 @@ const Video = ({video, playing}) => {
             <div>
                 {ytKey.length > 0 ?
                     <ReactPlayer
-                    width="1500px"
+                    width="100%"
                     height="1000px"
                     url={`https://www.youtube.com/embed/${ytKey[0].key}?autoplay=1`}
                     title="Youtube Player"

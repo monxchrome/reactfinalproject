@@ -15,6 +15,7 @@ a:hover {
     position: relative;
     bottom: 25px;
     z-index: 100;
+    width: 100%;
 }
 
 .TrailersDiv{
@@ -23,8 +24,13 @@ a:hover {
 
 .SwitcherDiv{
     position: relative;
+    margin-left: 30px;
     top: 44px;
-    left: 40px;
+
+}
+
+.Wrap{
+    display: flex;
 }
 
 .Mother {
@@ -37,11 +43,15 @@ a:hover {
     width: 100%;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
 .LogoDiv{
     margin-top: 50px;
-    margin-left: 50px;
+
 }
 
 .Logo{
@@ -58,7 +68,6 @@ a:hover {
 .MoviesListDiv{
     position: relative;
     top: 30px;
-    left: 950px;
 }
 
 .MoviesList{

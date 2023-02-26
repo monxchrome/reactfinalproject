@@ -20,7 +20,8 @@ html[data-theme='dark'] {
   --linear-gradient: 180deg, rgba(0, 0, 0, 0.76) 0%, rgba(0,0,0,0.4360337885154062) 50%, rgba(0, 0, 0, 0.84) 100%;
   --width: 200px;
   --height: 150px;
-  --top: 30px;
+  --top: 10px;
+  --top-iphone: 170px;
   --right: 100px;
   --left: 100px;
 
@@ -51,7 +52,8 @@ html[data-theme='light'] {
   --linear-gradient: 180deg, rgba(255,255,255,0.4500393907563025) 0%, rgba(0,0,0,0.4360337885154062) 50%, rgba(255,255,255,0.5200674019607843) 100%;
   --width: 100px;
   --height: 200px;
-  --top: 1px;
+  --top: 0px;
+  --top-iphone: 148px;
   --right: 150px;
   --left: 150px;
 

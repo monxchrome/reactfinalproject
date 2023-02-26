@@ -5,20 +5,18 @@ import css from "./styles/security.module.css";
 
 const Security = () => {
         return (
-            <div>
-                <div>
-                    <main className={css.main}>
-                        <aside className={css.sidebar}>
-                            <nav className={css.nav}>
-                                <ul>
-                                    <NavLink to={'/me'}><li><a href={'/me'}>Profile</a></li></NavLink>
-                                    <NavLink to={'/me/security'}><li className={css.active}><a href={'/security'}>Security</a></li></NavLink>
-                                    <NavLink to={'/me/support'}><li><a href={'/support'}>Support</a></li></NavLink>
-                                </ul>
-                            </nav>
-                        </aside>
-                    </main>
-                </div>
+            <div className={css.flex}>
+                <main className={css.main}>
+                    <aside className={css.sidebar}>
+                        <nav className={css.nav}>
+                            <ul>
+                                <NavLink to={'/me'}><li><a href={'/me'}>Profile</a></li></NavLink>
+                                <NavLink to={'/me/security'}><li className={css.active}><a href={'/security'}>Security</a></li></NavLink>
+                                <NavLink to={'/me/support'}><li><a href={'/support'}>Support</a></li></NavLink>
+                            </ul>
+                        </nav>
+                    </aside>
+                </main>
                 <div className={css.Wrap}>
                     <section className={css.twitter}>
                         <div className={css.Wraps}>

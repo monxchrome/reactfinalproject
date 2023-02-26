@@ -59,30 +59,26 @@
 
 .Wrap{
     display: flex;
-    position: absolute;
-    left: 850px;
-    top: 400px;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+.flex{
+    display: flex;
 }
 
 .Wraps{
     position: relative;
     display: flex;
-    right: 500px;
-    bottom: 250px;
 }
 
 .Wraps2{
     position: relative;
     display: flex;
-    right: 500px;
-    bottom: 250px;
 }
 
 .twitter {
     position: relative;
-    left: 50px;
-    width: 100px;
-    height: 100px;
 }
 .twitter .container {
     display: flex;
@@ -278,7 +274,6 @@
 
 .PasswordMain{
     position: relative;
-
 }
 
 .UserNameMain{

@@ -63,6 +63,10 @@ a {
 }
 
 .Father{
+    width: 100%;
+}
+
+.Father2{
     display: inline-block;
     position: relative;
     margin-left: 50px;
@@ -71,6 +75,12 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.MainWrap{
+    position: relative;
+    display: block;
+    text-align: center;
 }
 
 .Img{
@@ -126,7 +136,6 @@ a {
     display: flex;
     justify-content: space-around;
     position: relative;
-
 }
 
 .bubblyButton {
@@ -142,8 +151,6 @@ a {
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    position: relative;
-    right: 50px;
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
     box-shadow: 0 2px 25px rgba(49, 49, 49, 0.5);
 }
@@ -201,29 +208,25 @@ a {
 }
 
 .navMenu {
-    position: absolute;
-    top: 50%;
-    left: 715px;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+.FatherWrap{
+
 }
 
 .Wraps{
     position: relative;
     bottom: 30px;
-
 }
 
 .Wr{
     position: relative;
-    width: 700px;
-    left: 60%;
 }
 
 .films{
     position: relative;
-    top: 100px;
-    left: 6%;
 }
 
 .navMenu a {
@@ -244,8 +247,8 @@ a {
 
 .navMenu .dot {
     position: relative;
-    top: 5px;
-    left: 10px;
+    top: 30px;
+    right: 70px;
     width: 10px;
     height: 10px;
     background: #fddb3a;
@@ -297,8 +300,9 @@ a {
 }
 
 .TextDiv{
-    position: absolute;
-    margin-left: 665px;
+    position: relative;
+    width: 100%;
+    text-align: center;
 }
 
 .Text{

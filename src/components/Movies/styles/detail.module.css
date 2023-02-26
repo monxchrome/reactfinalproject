@@ -3,7 +3,6 @@
     border-radius: 50px;
     left: 8%;
     width: 100%;
-    height: 1000px;
     display: flex;
     background-color: var(--background-color);
     transition: background-color 200ms linear;
@@ -24,6 +23,7 @@
 .Wrap{
     display: inline-block;
     text-align: center;
+    width: 100%;
 }
 
 .TitleDiv{
@@ -54,7 +54,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    bottom: 100px;
+    bottom: 1px;
     object-fit: cover;
     opacity: var(--video-opacity);
     transition: opacity 1000ms linear;
@@ -72,7 +72,6 @@
 .DescText{
     position: relative;
     top: 20px;
-    left: 45%;
     font-size: large;
     color: var(--button-text-color);
     transition: color 300ms linear;
@@ -83,7 +82,9 @@
     z-index: 150;
     position: relative;
     top: 50px;
-    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Title{
@@ -99,16 +100,20 @@
 }
 
 .DescDiv{
+    display: flex;
     position: relative;
-    width: 800px;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.DescDiv2{
+
 }
 
 .Desc{
     color: var(--button-text-color);
     transition: color 300ms linear;
-    margin-left: 5%;
-    display: -webkit-box;
-    overflow: hidden;
+    width: 800px;
     font-size: large;
 }

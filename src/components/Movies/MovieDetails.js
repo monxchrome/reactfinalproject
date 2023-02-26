@@ -70,14 +70,16 @@ const MovieDetails = ({film}) => {
                                           emptyIcon={<StarIcon style={{ opacity: 0.55, color: 'white' }} fontSize="inherit" />}
                             />
                         </div>
-
+                        <h5 className={css.DescText}>Overview:</h5>
                         <div className={css.DescDiv}>
-                            <h5 className={css.DescText}>Overview:</h5>
-                            <p className={css.Desc}>{overview}</p>
-                            <div className={css.TrailersDiv}>
-                                <div>
-                                    {video.map(item => <Trailers key={item.id} video={item} film={film}/>)}
+                                <div className={css.DescDiv2}>
+                                    <p className={css.Desc}>{overview}</p>
                                 </div>
+                        </div>
+
+                        <div className={css.TrailersDiv}>
+                            <div>
+                                {video.map(item => <Trailers key={item.id} video={item} film={film}/>)}
                             </div>
                         </div>
 

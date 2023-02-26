@@ -43,27 +43,33 @@ const MainPage = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className={css.TVDiv}>
-                    <div className={css.TextDiv}>
-                        <h4 className={css.TVText}>Enjoy on TV</h4>
-                    </div>
-                    <div className={css.DescDiv}>
-                        <h5 className={css.TVDesc}> Watch our films on Smart TVs, Playstation, Xbox, Chromecast,
-                            Apple TV, Blu-ray players, and more.
-                        </h5>
+                    <div className={css.TextCenter}>
+                        <div className={css.TextDiv}>
+                            <h4 className={css.TVText}>Enjoy on TV</h4>
+                        </div>
+                        <div className={css.DescDiv}>
+                            <h5 className={css.TVDesc}> Watch our films on Smart TVs, Playstation, Xbox, Chromecast,
+                                Apple TV, Blu-ray players, and more.
+                            </h5>
+                        </div>
                     </div>
                     <div className={css.TVImgDiv}>
                         <div className={css.TVImg}></div>
                     </div>
                 </div>
+
                 <div className={css.TVDiv}>
-                    <div className={css.TextDiv}>
-                        <h4 className={css.TVText}>Watch everywhere</h4>
-                    </div>
-                    <div className={css.DescDiv}>
-                        <h5 className={css.TVDesc}> Stream unlimited movies and TV shows on your phone, tablet,
-                            laptop, and TV without paying more.
-                        </h5>
+                    <div className={css.TextCenter}>
+                        <div className={css.TextDiv}>
+                            <h4 className={css.TVText}>Watch everywhere</h4>
+                        </div>
+                        <div className={css.DescDiv}>
+                            <h5 className={css.TVDesc}> Stream unlimited movies and TV shows on your phone, tablet,
+                                laptop, and TV without paying more.
+                            </h5>
+                        </div>
                     </div>
                     <div className={css.ImgFather}>
                         <div className={css.TVImgDiv}>
@@ -77,14 +83,17 @@ const MainPage = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className={css.TVDiv}>
-                    <div className={css.TextDiv}>
-                        <h4 className={css.TVText}>Our partners</h4>
+                    <div className={css.TextCenter2}>
+                        <div className={css.TextDiv}>
+                            <h4 className={css.TVText}>Our partners</h4>
+                        </div>
+                        <div className={css.DescDiv}>
+                            <h5 className={css.TVDesc}> They helped us become who we are.</h5>
+                        </div>
                     </div>
-                    <div className={css.DescDiv}>
-                        <h5 className={css.TVDesc}> They helped us become who we are.</h5>
-                    </div>
-                    <div className={css.ImgFather}>
+                    <div className={css.ImgPartners}>
                         <div className={css.TVImgDiv}>
                             <div className={css.OktenImg}></div>
                         </div>

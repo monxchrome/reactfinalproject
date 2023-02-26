@@ -6,23 +6,20 @@ import css from './styles/support.module.css'
 const Support = () => {
         return (
             <div>
-                <div>
-                    <main className={css.main}>
-                        <aside className={css.sidebar}>
-                            <nav className={css.nav}>
-                                <ul>
-                                    <NavLink to={'/me'}><li><a href={'/me'}>Profile</a></li></NavLink>
-                                    <NavLink to={'/me/security'}><li><a href={'/security'}>Security</a></li></NavLink>
-                                    <NavLink to={'/me/support'}><li className={css.active}><a href={'/support'}>Support</a></li></NavLink>
-                                </ul>
-                            </nav>
-                        </aside>
-                    </main>
-                </div>
+                <main className={css.main}>
+                    <aside className={css.sidebar}>
+                        <nav className={css.nav}>
+                            <ul>
+                                <NavLink to={'/me'}><li><a href={'/me'}>Profile</a></li></NavLink>
+                                <NavLink to={'/me/security'}><li><a href={'/security'}>Security</a></li></NavLink>
+                                <NavLink to={'/me/support'}><li className={css.active}><a href={'/support'}>Support</a></li></NavLink>
+                            </ul>
+                        </nav>
+                    </aside>
+                </main>
                 <div className={css.Wrap}>
-                    <div>
-                        <section className={css.twitter}>
-                            <div className={css.Main}>
+                    <section className={css.twitter}>
+                        <div className={css.Main}>
                                 <div className={css.TitleText}>
                                     <h4 className={css.Title}>
                                         SUPPORT
@@ -59,9 +56,8 @@ const Support = () => {
                                         <div></div>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
-                    </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         );
